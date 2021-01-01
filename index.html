@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="Markdown 編輯器" />
+        <meta property="og:description" content="用 Markdown 寫作並沒有什麼講究，就像程式設計師可以直接在記事本上寫代碼一樣，也完全可以在記事本上用 Markdown 打字，最後再用支援 Markdown 的編輯器轉換即可。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/markdown-editor.css" />
+        <title>Markdown 編輯器</title>
+    </head>
+    <body>
+        <div id="editor">
+            <textarea :value="input" @input="update"></textarea>
+            <div v-html="compiledMarkdown"></div>
+        </div>
+        <script src="https://unpkg.com/vue@3.0.4/dist/vue.global.js" defer></script>
+        <script src="https://unpkg.com/marked@0.3.6/lib/marked.js" defer></script>
+        <script src="https://unpkg.com/lodash@4.16.0/lodash.js" defer></script>
+        <script src="js/markdown-editor.js" defer></script>
+    </body>
+</html>
