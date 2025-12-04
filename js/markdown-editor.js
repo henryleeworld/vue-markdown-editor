@@ -1,14 +1,14 @@
+const markedLib = window.marked;
+
 const app = Vue.createApp({
     data() {
         return {
-            input: '# Vue Markdown 編輯器'
-        }
+            input: '# Vue 3 Markdown 編輯器'
+        };
     },
     computed: {
         compiledMarkdown() {
-            return marked(this.input, {
-                sanitize: true
-            });
+            return markedLib.parse(this.input);
         }
     },
     methods: {
@@ -16,6 +16,6 @@ const app = Vue.createApp({
             this.input = e.target.value;
         }, 300)
     }
-})
+});
 
-app.mount('#editor')
+app.mount('#editor');

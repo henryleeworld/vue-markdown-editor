@@ -31,3 +31,9 @@ textarea {
 code {
     color: #f66;
 }
+
+#editor div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

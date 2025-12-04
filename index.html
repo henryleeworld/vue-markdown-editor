@@ -13,12 +13,12 @@
     </head>
     <body>
         <div id="editor">
-            <textarea :value="input" @input="update"></textarea>
+            <textarea v-model="input"></textarea>
             <div v-html="compiledMarkdown"></div>
         </div>
-        <script src="https://unpkg.com/vue@3.0.4/dist/vue.global.js" defer></script>
-        <script src="https://unpkg.com/marked@0.3.6/lib/marked.js" defer></script>
-        <script src="https://unpkg.com/lodash@4.16.0/lodash.js" defer></script>
+        <script src="https://unpkg.com/vue@3.5.24/dist/vue.global.prod.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked@5.1.0/marked.min.js"></script>
+        <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js" defer></script>
         <script src="js/markdown-editor.js" defer></script>
     </body>
 </html>

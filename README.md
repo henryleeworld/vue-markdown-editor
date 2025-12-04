@@ -11,5 +11,5 @@ $ git clone
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/bk2Lb47.png)
+![](https://i.imgur.com/vCdYJf8.png)
 > 好在由於 Markdown 本身支援轉換為 HTML，所以熟悉 HTML 的用戶也可以在 Markdown 的編輯器中使用 HTML 語法實現更豐富的頁面效果
